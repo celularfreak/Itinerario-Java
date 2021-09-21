@@ -24,7 +24,6 @@ public class Vehicle {
 					System.out.println("\n1: Mètode Main");
 				
 					iniciar();
-		
 					}
 				
 				public static  void iniciar() {
@@ -35,12 +34,7 @@ public class Vehicle {
 					
 					System.out.println("\nEs mostren els atributs de l'objecte Berlina que hem creat");
 					
-					System.out.println("\nMarca: "+ berlina.marca+"\n"+"Model: "+berlina.model+"\n"+"Color: "+ berlina.color+"\n"+"Potencia: "+berlina.potencia+"\n"+"Numero de portes: "+berlina.numPortes);
-		
-	}		
-
-
-					
-
-				
+					System.out.println("\nMarca: "+ berlina.marca+"\n"+"Model: "+berlina.model+"\n"+"Color: "+ berlina.color+"\n"+"Potencia: "+berlina.potencia+"\n"+"Numero de portes: "+berlina.numPortes);		
+					}		
+	
 }
