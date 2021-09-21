@@ -16,13 +16,13 @@ public class Vehicle {
 	}
 	
 	public static void parar() {
-		System.out.println("\nA continuación se ejecuta el metodo parar.");
+		System.out.println("\nA continuación se ejecuta el metodo parar:");
 		System.out.println("\n\nParando...");
 	}
 	
 	public void iniciar() {
 	
-		System.out.println("\nSe ejecuta el metodo iniciar.");
+		System.out.println("\nSe ejecuta el metodo iniciar:");
 		System.out.println("\n\nIniciando...");
 		
 	}
