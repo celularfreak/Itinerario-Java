@@ -1,0 +1,13 @@
+package exercici2;
+
+public class Vehicle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	static parar() {
+		
+	}
+}
