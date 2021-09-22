@@ -28,7 +28,7 @@ public class Frog extends Amphibian{
 		
 	}
 	public String toString() {
-		return "Clase Frog \nTiene la piel lisa =" + pielLisa + ", \nDe que color es =" + color + ", \nTiene cola = " + cola + "\nEs vertebrado = " +isVertebrado()+"\nEs oviparo = "+isOviparo()+"\nTiene pelo = "+isPelo()+"\nCuanta patas tiene = "+getNumpatas();
+		return "Clase Frog \nTiene la piel lisa =" + pielLisa + ", \nDe que color es =" + color + ", \nTiene cola = " + cola + "\nEs vertebrado = " +isVertebrado()+"\nEs oviparo = "+isOviparo()+"\nTiene pelo = "+isPelo()+"\nCuantas patas tiene = "+getNumpatas();
 	}
 
 	public static boolean isVertebrado() {
