@@ -1,4 +1,4 @@
-package exercici6;
+package exercici7;
 
 public class Amphibian {
 		
@@ -27,11 +27,4 @@ public class Amphibian {
 		public Amphibian(boolean cola) {
 			this.cola = cola;
 		}
-		
-	
-
-	
-	
-	
-
 }
