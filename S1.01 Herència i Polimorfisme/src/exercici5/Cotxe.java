@@ -16,7 +16,7 @@ public class Cotxe extends Vehicle {
 		
 		Cotxe berlina = new Cotxe("Ford", "Focus", "Rojo",120,5,225);
 		
-berlina.dimensiones(5);
+berlina.dimensiones(5,5,5);
 		
 		
 		System.out.println("\nMarca: "+ berlina.marca+"\n"+"Model: "+berlina.model+"\n"+"Color: "+ berlina.color+"\n"+"Potencia: "+berlina.potencia+"\n"+"Numero de portes: "+berlina.numPortes+"\nDiametre de Rodes: "+berlina.diametreRodes);

@@ -19,9 +19,10 @@ public Vehicle(String marca, String model, String color, int potencia, int numPo
 public void dimensiones(int largo) {
 	System.out.println("largo"+largo);
 	}
-public int dimensiones(int largo, int ancho) {
-	return ancho;}
-public int dimensiones(int largo, int ancho, int alto) {
-	return alto;}
+public void dimensiones(int largo, int ancho) {
+	System.out.println("largo"+largo+"ancho"+ancho);
+	}
+public void dimensiones(int largo, int ancho, int alto) {
+	System.out.println("largo"+largo+"ancho"+ancho+alto+"alto");}
 }
 
