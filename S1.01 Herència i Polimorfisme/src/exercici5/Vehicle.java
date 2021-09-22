@@ -17,12 +17,16 @@ public Vehicle(String marca, String model, String color, int potencia, int numPo
 	}
 
 public void dimensiones(int largo) {
-	System.out.println("largo"+largo);
+	System.out.println("\nPrimera Sobrecarga dentro de Vehicle:");
+	System.out.println("\nLargo: "+largo);
 	}
 public void dimensiones(int largo, int ancho) {
-	System.out.println("largo"+largo+"ancho"+ancho);
+	System.out.println("\nSegunda Sobrecarga dentro de Vehicle:");
+	System.out.println("\nLargo: "+largo+" X Ancho: "+ancho);
 	}
 public void dimensiones(int largo, int ancho, int alto) {
-	System.out.println("largo"+largo+"ancho"+ancho+alto+"alto");}
+	System.out.println("\nTercera Sobrecarga dentro de Vehicle:");
+	System.out.println("\nLargo: "+largo+" X Ancho: "+ancho+" X Alto: "+ancho);
+	}
 }
 
