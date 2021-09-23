@@ -1,36 +1,19 @@
 package exercici1;
 
 public class Excepcion {
-	
-	int numero;
-	String texto;
-	
-	 public static void main(String[] args) {
-		 Excepcion prueba;
-		 try {
-			 prueba = new Excepcion(3.5,"prueba");
-		 }catch (IllegalArgumentException e) {
-			 System.out.println("hey");
-		 }
-		 finally { System.out.println("paso por aqui");}
-	 }
-	 
-	public int getNumero() {
-		return numero;
+
+	public static void main(String[] args) {
+		
+		try
+		{ 
+			System.out.println("Estamos en try");
+			throw new Exception("Provocamos la excepción");
+		}
+		catch (Exception e) {
+			System.out.println("Estamos en catch: "+e.getMessage());
+		}
+		finally {
+			System.out.println("Llegamos al finally");
+		}
 	}
-	public void setNumero(int numero) {
-		this.numero = numero;
-	}
-	public String getTexto() {
-		return texto;
-	}
-	public void setTexto(String texto) {
-		this.texto = texto;
-	}
-	public Excepcion(int numero, String texto) {
-		super();
-		this.numero = numero;
-		this.texto = texto;
-	}
-	
 }
