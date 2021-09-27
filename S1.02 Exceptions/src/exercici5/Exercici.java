@@ -8,19 +8,18 @@ public class Exercici {
 	int segonNum = 0;
 	int resultado =0;
 	
-	boolean condicio = false;
+	boolean continuar = true;
 	
-	while (condicio != true) {
+	while (continuar) {
 		
 		try {
 			resultado = primerNum / segonNum;
-			
+			continuar = false;
 		}catch (Exception e){
 			System.out.println("No se puede dividir entre 0 y se captura el error");
-			condicio = true;
-		}
-		System.out.println(primerNum+" / "+segonNum+" = "+resultado);
+		}finally {segonNum++;}
+		
 	}
-	
+	System.out.println("Estoy fuera");
 	}
 }

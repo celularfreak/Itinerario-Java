@@ -3,7 +3,7 @@ package exercici2;
 public class Exercici {
 	
 	private void prova() {
-		System.out.println("Exejecutamos metodo prova");
+		System.out.println("Ejecutamos metodo prova");
 	}
 	
 	public static void main(String[] args) {
