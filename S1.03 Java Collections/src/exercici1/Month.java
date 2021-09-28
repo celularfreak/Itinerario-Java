@@ -26,11 +26,11 @@ public Month(String name) {
 		año.add(new Month("Noviembre"));
 		año.add(new Month("Diciembre"));
 		
-		System.out.println("\n Comprobamos la lista de meses que hemos creado\n");
+		System.out.println("\nComprobamos la lista de meses que hemos creado\n");
 		for (Month month: año) {
 			System.out.println("Nom del mes: "+month.name);
 		}
-		System.out.println("\n Comprobamos la lista de meses que hemos creado\n");
+		System.out.println("\nComprobamos la lista de meses que hemos creado\n");
 		año.add(7, new Month("Agosto"));
 		for (Month month: año) {
 			System.out.println("Nom del mes: "+month.name);
