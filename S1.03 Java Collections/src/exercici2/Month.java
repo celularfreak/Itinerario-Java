@@ -1,42 +1,40 @@
 package exercici2;
 
-import java.util.ArrayList;
-import java.util.TreeSet;
+public class Month implements Comparable {
 
-public class Month {
-	
-	String name;
-	
-public Month(String name) {
+	public Month(String name) {
 		this.name = name;
 	}
 
-public static void main(String[] args) {
-	
-	TreeSet <Month> año = new TreeSet<>();
-	
-	
-	
-	año.add(new Month("Enero"));
-	año.add(new Month("Febrero"));
-	año.add(new Month("Marzo"));
-	año.add(new Month("Abril"));
-	año.add(new Month("Mayo"));
-	año.add(new Month("Junio"));
-	año.add(new Month("Julio"));
-	año.add(new Month("Septiembre"));
-	año.add(new Month("Octubre"));
-	año.add(new Month("Noviembre"));
-	año.add(new Month("Diciembre"));
-	
-	System.out.println("\nComprobamos la lista de meses que hemos creado\n");
-	for (Month month: año) {
-		System.out.println("Nom del mes: "+month.name);
+	private String name;
+
+	public String getName() {
+		return name;
 	}
-	System.out.println("\nComprobamos la lista de meses que hemos creado\n");
-	//año.add(7, new Month("Agosto"));
-	for (Month month: año) {
-		System.out.println("Nom del mes: "+month.name);
+
+	public void setName(String name) {
+		this.name = name;
 	}
-}
+
+	
+	
+	@Override
+	public String toString() {
+		return "Mes: " + name;
+	}
+
+	public int compareTo(Object o) {
+
+		int result = 0;
+		Month other = null;
+
+		if (o != null && o instanceof Month) {
+			other = (Month) o;
+		}
+
+		result = this.name.compareTo(other.name);
+
+		return result;
+	}
+
 }
