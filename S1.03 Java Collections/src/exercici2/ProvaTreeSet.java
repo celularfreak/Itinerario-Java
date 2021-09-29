@@ -1,15 +1,13 @@
 package exercici2;
 
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
 import java.util.TreeSet;
 
 public class ProvaTreeSet {
 
 	public static void main(String[] args) {
 		
-		ArrayList<Month> año = new ArrayList <Month>();
-		
+		TreeSet<Month> año = new TreeSet<Month>();
+	
 		año.add(new Month("Enero"));
 		año.add(new Month("Febrero"));
 		año.add(new Month("Marzo"));
@@ -23,21 +21,15 @@ public class ProvaTreeSet {
 		año.add(new Month("Noviembre"));
 		año.add(new Month("Diciembre"));
 		
-		//TreeSet<Month> año2 = new TreeSet<Month>();
-		
-		//TreeSet<Month> año2 = new TreeSet<Month>(año);
-		//año2.addAll(año);
-		
-		LinkedHashSet<Month> año2 = new LinkedHashSet<Month>();
-		año2.addAll(año);
-		
-		for(Month m : año2)
+
+		for(Month m : año)
 		{
 			System.out.println(m);
 		}
-		año2.add(new Month("Agosto"));
-		System.out.println("\n\n");
-		for(Month m : año2)
+		System.out.println("\n\nAhora provamos que no se puede agregar un objeto duplicado");
+		System.out.println("\n");
+		año.add(new Month("Agosto"));
+		for(Month m : año)
 		{
 			System.out.println(m);
 		}
