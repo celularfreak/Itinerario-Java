@@ -7,19 +7,25 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		int[] numeros= {1,2,3,4,5,6,7,8,9};
-		
 		LinkedList<Integer> lista = new LinkedList <Integer>();
 		
-		ListIterator<Integer> it = lista.listIterator();
+		lista.add(0,1);
+		lista.add(1,2);
+		int numero = 3;
+		int posicion;
 		
-		while(it.hasNext()) {
-			for (int x: numeros) {
-				lista.add(x);
-			}
-			 //lista.add((Integer) añadir.previous());
-			System.out.println(lista);
-	}
-		
+		do {
+				posicion = lista.size()/2;
+				lista.add(posicion, numero);
+				numero++;
+				System.out.println(lista);
+		}while (lista.size()!=10);
 	}
 }
+		
+			
+			
+		
+	
+	
+
